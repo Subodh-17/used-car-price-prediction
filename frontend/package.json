@@ -1,0 +1,13 @@
+{
+  "name": "used-car-price-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free (no build step) frontend for the Used Car Price Prediction System",
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "check": "node scripts/check-syntax.mjs",
+    "configure": "node scripts/configure.mjs",
+    "serve": "python3 -m http.server 5173"
+  }
+}

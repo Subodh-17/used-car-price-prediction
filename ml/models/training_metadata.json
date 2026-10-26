@@ -1,0 +1,42 @@
+{
+  "trained_utc": "2026-10-26T13:17:41+00:00",
+  "data_version": "c190e4a8f72a23c9",
+  "seed": 42,
+  "selected_estimator": "hist_gradient_boosting",
+  "estimator_params": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 50,
+    "min_samples_leaf": 10
+  },
+  "rows": 13630,
+  "valuation_year": 2022,
+  "features": [
+    "make",
+    "model",
+    "variant",
+    "fuel",
+    "transmission",
+    "seller_type",
+    "city",
+    "body_type",
+    "year",
+    "snapshot_year",
+    "km_driven",
+    "owner_count",
+    "engine_cc",
+    "max_power_bhp",
+    "mileage",
+    "seats"
+  ],
+  "libraries": {
+    "python": "3.11.0",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "joblib": "1.6.0"
+  },
+  "catboost_available": false,
+  "training_seconds": 346.7,
+  "artifact": "models/used_car_price_model.joblib",
+  "artifact_notice": "scikit-learn pickles are version specific; load only artifacts you trained yourself (never untrusted joblib files)."
+}

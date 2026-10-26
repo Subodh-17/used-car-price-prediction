@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: used-car-price-prediction
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: MODELS_DIR
+        value: ml/models
+      - key: ML_DIR
+        value: ml
+      - key: FRONTEND_DIR
+        value: frontend
+      - key: HISTORY_DB_PATH
+        value: backend/data/history.sqlite3
+      - key: LOG_LEVEL
+        value: INFO
+      - key: HISTORY_SALT
+        generateValue: true

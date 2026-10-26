@@ -1,0 +1,851 @@
+{
+  "target": "price_inr (listed selling price, Indian rupees)",
+  "units": "INR (\u20b9)",
+  "selected_model": "hist_gradient_boosting",
+  "selection_rule": "lowest out-of-fold MAE (INR) in 5-fold group CV on the development set; ties -> RMSE",
+  "split": {
+    "strategy": "group-aware random holdout (no time-based split: reliable listing dates exist for one source only)",
+    "group_key": "make|model|year|fuel|km rounded to 1000",
+    "seed": 42,
+    "n_total": 13630,
+    "n_dev": 11585,
+    "n_test": 2045,
+    "cv_folds": 5
+  },
+  "test": {
+    "n": 2045,
+    "mae_inr": 129033.6031398183,
+    "rmse_inr": 633966.8775133813,
+    "r2": 0.6919824853227973,
+    "mape_pct": 15.861939153717863,
+    "median_ape_pct": 11.168256239664515
+  },
+  "test_baseline_median": {
+    "n": 2045,
+    "mae_inr": 484810.111002445,
+    "rmse_inr": 1180077.4902205544,
+    "r2": -0.06724303377492347,
+    "mape_pct": 85.78653392968182,
+    "median_ape_pct": 46.03142857142857
+  },
+  "test_all_candidates": {
+    "median_baseline": {
+      "n": 2045,
+      "mae_inr": 484810.111002445,
+      "rmse_inr": 1180077.4902205544,
+      "r2": -0.06724303377492347,
+      "mape_pct": 85.78653392968182,
+      "median_ape_pct": 46.03142857142857
+    },
+    "linear_regression": {
+      "n": 2045,
+      "mae_inr": 145093.94863076936,
+      "rmse_inr": 583341.0939702685,
+      "r2": 0.7392121106047596,
+      "mape_pct": 17.50168418893997,
+      "median_ape_pct": 12.69780474146176
+    },
+    "random_forest": {
+      "n": 2045,
+      "mae_inr": 153208.24308017525,
+      "rmse_inr": 512044.7254971132,
+      "r2": 0.7990638532339136,
+      "mape_pct": 18.802801135898974,
+      "median_ape_pct": 12.799432646184695
+    },
+    "hist_gradient_boosting": {
+      "n": 2045,
+      "mae_inr": 129033.6031398183,
+      "rmse_inr": 633966.8775133813,
+      "r2": 0.6919824853227973,
+      "mape_pct": 15.861939153717863,
+      "median_ape_pct": 11.168256239664515
+    }
+  },
+  "cv_candidates": [
+    {
+      "model": "median_baseline",
+      "best_params": {},
+      "n": 11585,
+      "mae_inr": 518328.1540353906,
+      "rmse_inr": 1323718.1521441217,
+      "r2": -0.06229417870857712,
+      "mape_pct": 89.889683509402,
+      "median_ape_pct": 50.0,
+      "fit_seconds": 0.1
+    },
+    {
+      "model": "linear_regression",
+      "best_params": {},
+      "n": 11585,
+      "mae_inr": 156523.32932764344,
+      "rmse_inr": 629273.9199314244,
+      "r2": 0.7599325835820343,
+      "mape_pct": 18.53337320534557,
+      "median_ape_pct": 12.804438687648354,
+      "fit_seconds": 3.3
+    },
+    {
+      "model": "random_forest",
+      "best_params": {
+        "max_features": 1.0,
+        "min_samples_leaf": 2
+      },
+      "n": 11585,
+      "mae_inr": 168260.05030525592,
+      "rmse_inr": 643785.5482483951,
+      "r2": 0.7487325689398641,
+      "mape_pct": 20.211698700466073,
+      "median_ape_pct": 13.637907716704852,
+      "fit_seconds": 23.9
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 50,
+        "min_samples_leaf": 10
+      },
+      "n": 11585,
+      "mae_inr": 132187.980840426,
+      "rmse_inr": 595622.1163948935,
+      "r2": 0.784922299948614,
+      "mape_pct": 16.189980574997755,
+      "median_ape_pct": 11.081901659100705,
+      "fit_seconds": 269.8
+    }
+  ],
+  "candidate_errors": {},
+  "interval": {
+    "method": "Mondrian split-conformal on log-price: one calibrated width per PREDICTED-price band, from out-of-fold residuals (5-fold group CV on the development set)",
+    "nominal_coverage": 0.8,
+    "bands": [
+      {
+        "name": "< \u20b93L",
+        "lo_inr": 0,
+        "hi_inr": 300000,
+        "log_quantile": 0.32857651235800134,
+        "n_calibration": 3522,
+        "fallback_to_overall": false,
+        "test_n": 569,
+        "test_coverage": 0.8172231985940246,
+        "validated": true
+      },
+      {
+        "name": "\u20b93\u20136L",
+        "lo_inr": 300000,
+        "hi_inr": 600000,
+        "log_quantile": 0.19944599810948738,
+        "n_calibration": 3902,
+        "fallback_to_overall": false,
+        "test_n": 734,
+        "test_coverage": 0.7942779291553134,
+        "validated": true
+      },
+      {
+        "name": "\u20b96\u201310L",
+        "lo_inr": 600000,
+        "hi_inr": 1000000,
+        "log_quantile": 0.1845401329943943,
+        "n_calibration": 2339,
+        "fallback_to_overall": false,
+        "test_n": 415,
+        "test_coverage": 0.8096385542168675,
+        "validated": true
+      },
+      {
+        "name": "\u20b910\u201320L",
+        "lo_inr": 1000000,
+        "hi_inr": 2000000,
+        "log_quantile": 0.22879062320290444,
+        "n_calibration": 1060,
+        "fallback_to_overall": false,
+        "test_n": 198,
+        "test_coverage": 0.8181818181818182,
+        "validated": true
+      },
+      {
+        "name": "\u2265 \u20b920L",
+        "lo_inr": 2000000,
+        "hi_inr": null,
+        "log_quantile": 0.27064542043659934,
+        "n_calibration": 762,
+        "fallback_to_overall": false,
+        "test_n": 129,
+        "test_coverage": 0.8294573643410853,
+        "validated": true
+      }
+    ],
+    "n_calibration": 11585,
+    "test_coverage": 0.8083129584352078,
+    "validated": true,
+    "validation_rule": "overall test coverage within \u00b15 points of nominal; each band additionally needs >=25 test cars and coverage within \u00b18 points to be shown"
+  },
+  "segments_test": {
+    "price_band": [
+      {
+        "n": 721,
+        "mae_inr": 60483.57263343768,
+        "rmse_inr": 135818.42005654072,
+        "r2": -1.4152067318878547,
+        "mape_pct": 14.091775084354435,
+        "median_ape_pct": 10.168305040628468,
+        "segment": "\u20b93\u20136L"
+      },
+      {
+        "n": 550,
+        "mae_inr": 33895.969293366725,
+        "rmse_inr": 47157.4026651288,
+        "r2": 0.5349242371955709,
+        "mape_pct": 21.12925052657094,
+        "median_ape_pct": 15.042938279561152,
+        "segment": "< \u20b93L"
+      },
+      {
+        "n": 433,
+        "mae_inr": 88682.47852055897,
+        "rmse_inr": 144340.94548559733,
+        "r2": -0.77288205179189,
+        "mape_pct": 11.76836350811495,
+        "median_ape_pct": 9.259059648663555,
+        "segment": "\u20b96\u201310L"
+      },
+      {
+        "n": 203,
+        "mae_inr": 196188.84129876617,
+        "rmse_inr": 296400.5025899769,
+        "r2": -0.11746455543657874,
+        "mape_pct": 14.456543348124343,
+        "median_ape_pct": 10.607616491974579,
+        "segment": "\u20b910\u201320L"
+      },
+      {
+        "n": 113,
+        "mae_inr": 577200.4274480107,
+        "rmse_inr": 861977.7792133903,
+        "r2": -0.08608476422683276,
+        "mape_pct": 18.409618217912417,
+        "median_ape_pct": 12.391684468814654,
+        "segment": "\u20b920\u201350L"
+      },
+      {
+        "n": 25,
+        "mae_inr": 2326911.326247656,
+        "rmse_inr": 5278544.846441604,
+        "r2": -0.6003335826628009,
+        "mape_pct": 21.82965546449419,
+        "median_ape_pct": 9.268591569294538,
+        "segment": "\u2265 \u20b950L"
+      }
+    ],
+    "make": [
+      {
+        "n": 570,
+        "mae_inr": 45742.816403809884,
+        "rmse_inr": 64727.999354201136,
+        "r2": 0.9236639001610004,
+        "mape_pct": 14.534238500199786,
+        "median_ape_pct": 10.46761338690499,
+        "segment": "Maruti Suzuki"
+      },
+      {
+        "n": 372,
+        "mae_inr": 57052.974630180746,
+        "rmse_inr": 89437.27928837384,
+        "r2": 0.9117102641046916,
+        "mape_pct": 11.986240162402083,
+        "median_ape_pct": 9.412294402116078,
+        "segment": "Hyundai"
+      },
+      {
+        "n": 187,
+        "mae_inr": 85363.87503631461,
+        "rmse_inr": 131891.58668260564,
+        "r2": 0.9116878272112773,
+        "mape_pct": 14.39874300046473,
+        "median_ape_pct": 10.338704626758705,
+        "segment": "Mahindra"
+      },
+      {
+        "n": 147,
+        "mae_inr": 52107.65722224229,
+        "rmse_inr": 75927.05919009044,
+        "r2": 0.9516639349045953,
+        "mape_pct": 18.375001448129634,
+        "median_ape_pct": 13.052930565750115,
+        "segment": "Tata"
+      },
+      {
+        "n": 143,
+        "mae_inr": 89919.87078815092,
+        "rmse_inr": 147302.35006236288,
+        "r2": 0.7531535859558158,
+        "mape_pct": 15.119311971705397,
+        "median_ape_pct": 10.970023830338908,
+        "segment": "Honda"
+      },
+      {
+        "n": 100,
+        "mae_inr": 182187.07677878268,
+        "rmse_inr": 294667.3655728843,
+        "r2": 0.8631791701293543,
+        "mape_pct": 17.052106641622764,
+        "median_ape_pct": 13.558974704241173,
+        "segment": "Toyota"
+      },
+      {
+        "n": 92,
+        "mae_inr": 156218.28499087875,
+        "rmse_inr": 506926.95758126717,
+        "r2": 0.7358213800175681,
+        "mape_pct": 15.191205191567118,
+        "median_ape_pct": 12.547874988546182,
+        "segment": "Ford"
+      },
+      {
+        "n": 65,
+        "mae_inr": 55893.27569002917,
+        "rmse_inr": 90827.38315024186,
+        "r2": 0.7537283373960022,
+        "mape_pct": 11.445977166831765,
+        "median_ape_pct": 8.500792242566531,
+        "segment": "Renault"
+      },
+      {
+        "n": 60,
+        "mae_inr": 52680.953328789314,
+        "rmse_inr": 73799.0290813797,
+        "r2": 0.7525274676901416,
+        "mape_pct": 22.992302893142252,
+        "median_ape_pct": 19.82778249687111,
+        "segment": "Chevrolet"
+      },
+      {
+        "n": 55,
+        "mae_inr": 496903.7138129878,
+        "rmse_inr": 746669.0083088062,
+        "r2": 0.8609290463952215,
+        "mape_pct": 18.546265548395958,
+        "median_ape_pct": 12.72442896802671,
+        "segment": "Mercedes-Benz"
+      },
+      {
+        "n": 52,
+        "mae_inr": 66437.48084100062,
+        "rmse_inr": 87743.76468870048,
+        "r2": 0.8485863891130977,
+        "mape_pct": 15.52153608185309,
+        "median_ape_pct": 11.484897050184358,
+        "segment": "Volkswagen"
+      },
+      {
+        "n": 44,
+        "mae_inr": 274788.87292726594,
+        "rmse_inr": 333225.3191409646,
+        "r2": 0.9287592564578754,
+        "mape_pct": 13.163274288008395,
+        "median_ape_pct": 11.784585519396442,
+        "segment": "Audi"
+      },
+      {
+        "n": 32,
+        "mae_inr": 265470.2263853826,
+        "rmse_inr": 327297.1369227953,
+        "r2": 0.9568378438417591,
+        "mape_pct": 11.815205595366288,
+        "median_ape_pct": 9.790349953404183,
+        "segment": "BMW"
+      },
+      {
+        "n": 30,
+        "mae_inr": 91690.70546655545,
+        "rmse_inr": 146587.16752692492,
+        "r2": 0.9531593903446344,
+        "mape_pct": 13.396969300308648,
+        "median_ape_pct": 9.625267686325191,
+        "segment": "Skoda"
+      }
+    ],
+    "fuel": [
+      {
+        "n": 1049,
+        "mae_inr": 136666.03885979753,
+        "rmse_inr": 310089.62480001664,
+        "r2": 0.916047216217515,
+        "mape_pct": 14.881177039830721,
+        "median_ape_pct": 10.979922575639495,
+        "segment": "Diesel"
+      },
+      {
+        "n": 967,
+        "mae_inr": 121968.87030092267,
+        "rmse_inr": 862452.4720874794,
+        "r2": 0.47497804422633494,
+        "mape_pct": 16.89064370411924,
+        "median_ape_pct": 11.233806408704803,
+        "segment": "Petrol"
+      }
+    ],
+    "transmission": [
+      {
+        "n": 1588,
+        "mae_inr": 60551.797048046865,
+        "rmse_inr": 91224.42161421228,
+        "r2": 0.9155266496963935,
+        "mape_pct": 15.250640786036895,
+        "median_ape_pct": 11.28998338356221,
+        "segment": "Manual"
+      },
+      {
+        "n": 308,
+        "mae_inr": 359090.66263333516,
+        "rmse_inr": 1388024.733355981,
+        "r2": 0.5846458382310336,
+        "mape_pct": 17.57532016309156,
+        "median_ape_pct": 11.171406246669967,
+        "segment": "Automatic"
+      },
+      {
+        "n": 149,
+        "mae_inr": 383339.1987755893,
+        "rmse_inr": 1202073.8925399615,
+        "r2": 0.5328046590527572,
+        "mape_pct": 18.835230811370746,
+        "median_ape_pct": 9.134607952346677,
+        "segment": "Unknown"
+      }
+    ],
+    "body_type": [
+      {
+        "n": 2045,
+        "mae_inr": 129033.6031398183,
+        "rmse_inr": 633966.8775133813,
+        "r2": 0.6919824853227973,
+        "mape_pct": 15.861939153717863,
+        "median_ape_pct": 11.168256239664515,
+        "segment": "Unknown"
+      }
+    ],
+    "source": [
+      {
+        "n": 1018,
+        "mae_inr": 73431.98391305142,
+        "rmse_inr": 148246.37829057898,
+        "r2": 0.9224320190980186,
+        "mape_pct": 14.509530609357993,
+        "median_ape_pct": 10.975518690631421,
+        "segment": "cardekho_v3"
+      },
+      {
+        "n": 535,
+        "mae_inr": 75538.9894740243,
+        "rmse_inr": 173513.38493758973,
+        "r2": 0.9081138020091893,
+        "mape_pct": 17.847711989884342,
+        "median_ape_pct": 13.322836064200235,
+        "segment": "cardekho_old"
+      },
+      {
+        "n": 307,
+        "mae_inr": 282733.6669977586,
+        "rmse_inr": 1358075.781615774,
+        "r2": 0.5862450923486489,
+        "mape_pct": 15.878306805856287,
+        "median_ape_pct": 9.482307739118328,
+        "segment": "cardekho_v4"
+      },
+      {
+        "n": 185,
+        "mae_inr": 334634.3981650119,
+        "rmse_inr": 1083569.7587883393,
+        "r2": 0.5592211440004493,
+        "mape_pct": 17.534039486705947,
+        "median_ape_pct": 9.413972179718622,
+        "segment": "city_listings"
+      }
+    ],
+    "vehicle_age": [
+      {
+        "n": 620,
+        "mae_inr": 108216.80226334746,
+        "rmse_inr": 544779.9506684818,
+        "r2": 0.4321264993859648,
+        "mape_pct": 17.591143133580147,
+        "median_ape_pct": 12.181507959183627,
+        "segment": "7-10 yrs"
+      },
+      {
+        "n": 605,
+        "mae_inr": 157634.98930198664,
+        "rmse_inr": 969315.355365543,
+        "r2": 0.43686525265356324,
+        "mape_pct": 13.196108903040388,
+        "median_ape_pct": 10.130682087787026,
+        "segment": "4-6 yrs"
+      },
+      {
+        "n": 549,
+        "mae_inr": 149231.02293661563,
+        "rmse_inr": 317081.51599292835,
+        "r2": 0.9490919850679697,
+        "mape_pct": 12.602542623704402,
+        "median_ape_pct": 8.979448735832761,
+        "segment": "0-3 yrs"
+      },
+      {
+        "n": 271,
+        "mae_inr": 71890.40921678639,
+        "rmse_inr": 229464.7967789758,
+        "r2": 0.6605781838902077,
+        "mape_pct": 24.4602030988199,
+        "median_ape_pct": 18.91314247731513,
+        "segment": "11+ yrs"
+      }
+    ]
+  },
+  "permutation_importance_test": [
+    {
+      "feature": "model",
+      "mae_increase_inr": 241807.61376390653,
+      "std": 6560.936377863428
+    },
+    {
+      "feature": "year",
+      "mae_increase_inr": 204451.31504548644,
+      "std": 2057.0317500749793
+    },
+    {
+      "feature": "make",
+      "mae_increase_inr": 127827.64444504234,
+      "std": 4403.754257177163
+    },
+    {
+      "feature": "max_power_bhp",
+      "mae_increase_inr": 37065.47617492315,
+      "std": 3149.5020638268697
+    },
+    {
+      "feature": "city",
+      "mae_increase_inr": 29553.648937435053,
+      "std": 1322.6486330437185
+    },
+    {
+      "feature": "snapshot_year",
+      "mae_increase_inr": 22697.78651585683,
+      "std": 349.19891737046913
+    },
+    {
+      "feature": "km_driven",
+      "mae_increase_inr": 21496.798442723357,
+      "std": 72.32851280860208
+    },
+    {
+      "feature": "transmission",
+      "mae_increase_inr": 19847.560467255953,
+      "std": 3484.735191168105
+    },
+    {
+      "feature": "variant",
+      "mae_increase_inr": 5684.423326917119,
+      "std": 1160.5782274176856
+    },
+    {
+      "feature": "fuel",
+      "mae_increase_inr": 4746.320088202357,
+      "std": 56.70701887422518
+    },
+    {
+      "feature": "engine_cc",
+      "mae_increase_inr": 4618.005839060036,
+      "std": 2493.3273038053267
+    },
+    {
+      "feature": "owner_count",
+      "mae_increase_inr": 2910.5065951355887,
+      "std": 243.03053502976059
+    },
+    {
+      "feature": "mileage",
+      "mae_increase_inr": 2137.1451162781595,
+      "std": 671.074537876607
+    },
+    {
+      "feature": "seats",
+      "mae_increase_inr": 1581.3887075761838,
+      "std": 150.30469396497165
+    },
+    {
+      "feature": "seller_type",
+      "mae_increase_inr": 1001.9562920787527,
+      "std": 79.73622352280198
+    },
+    {
+      "feature": "body_type",
+      "mae_increase_inr": 0.0,
+      "std": 0.0
+    }
+  ],
+  "failure_cases_top20_abs_error": [
+    {
+      "row_id": "cardekho_v4:510",
+      "source": "cardekho_v4",
+      "make": "Lamborghini",
+      "model": "Huracan",
+      "year": 2016,
+      "km_driven": 6000.0,
+      "fuel": "Petrol",
+      "actual_inr": 24000000.0,
+      "predicted_inr": 1550554.0,
+      "abs_error_inr": 22449446.0,
+      "ape_pct": 93.5
+    },
+    {
+      "row_id": "city_listings:68",
+      "source": "city_listings",
+      "make": "Lamborghini",
+      "model": "Gallardo",
+      "year": 2012,
+      "km_driven": 14500.0,
+      "fuel": "Petrol",
+      "actual_inr": 12500000.0,
+      "predicted_inr": 464651.2,
+      "abs_error_inr": 12035348.8,
+      "ape_pct": 96.3
+    },
+    {
+      "row_id": "city_listings:1167",
+      "source": "city_listings",
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 2017,
+      "km_driven": 11100.0,
+      "fuel": "Petrol",
+      "actual_inr": 6500000.0,
+      "predicted_inr": 2112103.7,
+      "abs_error_inr": 4387896.3,
+      "ape_pct": 67.5
+    },
+    {
+      "row_id": "city_listings:1103",
+      "source": "city_listings",
+      "make": "Land Rover",
+      "model": "Range Rover Evoque",
+      "year": 2017,
+      "km_driven": 30980.0,
+      "fuel": "Diesel",
+      "actual_inr": 3500000.0,
+      "predicted_inr": 6894062.1,
+      "abs_error_inr": 3394062.1,
+      "ape_pct": 97.0
+    },
+    {
+      "row_id": "cardekho_v4:1778",
+      "source": "cardekho_v4",
+      "make": "Volvo",
+      "model": "XC90",
+      "year": 2021,
+      "km_driven": 32500.0,
+      "fuel": "Diesel",
+      "actual_inr": 8500000.0,
+      "predicted_inr": 5646305.9,
+      "abs_error_inr": 2853694.1,
+      "ape_pct": 33.6
+    },
+    {
+      "row_id": "cardekho_v4:991",
+      "source": "cardekho_v4",
+      "make": "Nissan",
+      "model": "Teana",
+      "year": 2013,
+      "km_driven": 33000.0,
+      "fuel": "Petrol",
+      "actual_inr": 550000.0,
+      "predicted_inr": 3393682.4,
+      "abs_error_inr": 2843682.4,
+      "ape_pct": 517.0
+    },
+    {
+      "row_id": "cardekho_old:3875",
+      "source": "cardekho_old",
+      "make": "Land Rover",
+      "model": "Range Rover",
+      "year": 2010,
+      "km_driven": 100000.0,
+      "fuel": "Diesel",
+      "actual_inr": 4200000.0,
+      "predicted_inr": 1359846.6,
+      "abs_error_inr": 2840153.4,
+      "ape_pct": 67.6
+    },
+    {
+      "row_id": "city_listings:245",
+      "source": "city_listings",
+      "make": "Land Rover",
+      "model": "Range Rover Evoque",
+      "year": 2018,
+      "km_driven": 40000.0,
+      "fuel": "Diesel",
+      "actual_inr": 4500000.0,
+      "predicted_inr": 6885402.5,
+      "abs_error_inr": 2385402.5,
+      "ape_pct": 53.0
+    },
+    {
+      "row_id": "city_listings:790",
+      "source": "city_listings",
+      "make": "Porsche",
+      "model": "Cayenne",
+      "year": 2010,
+      "km_driven": 73000.0,
+      "fuel": "Petrol",
+      "actual_inr": 3500000.0,
+      "predicted_inr": 1121465.8,
+      "abs_error_inr": 2378534.2,
+      "ape_pct": 68.0
+    },
+    {
+      "row_id": "cardekho_v4:575",
+      "source": "cardekho_v4",
+      "make": "Mercedes-Benz",
+      "model": "S-Class",
+      "year": 2012,
+      "km_driven": 44000.0,
+      "fuel": "Petrol",
+      "actual_inr": 1650000.0,
+      "predicted_inr": 3927830.6,
+      "abs_error_inr": 2277830.6,
+      "ape_pct": 138.1
+    },
+    {
+      "row_id": "city_listings:386",
+      "source": "city_listings",
+      "make": "Mercedes-Benz",
+      "model": "GLS",
+      "year": 2020,
+      "km_driven": 14800.0,
+      "fuel": "Diesel",
+      "actual_inr": 8400000.0,
+      "predicted_inr": 6155283.2,
+      "abs_error_inr": 2244716.8,
+      "ape_pct": 26.7
+    },
+    {
+      "row_id": "cardekho_v4:1020",
+      "source": "cardekho_v4",
+      "make": "Land Rover",
+      "model": "Discovery",
+      "year": 2016,
+      "km_driven": 120000.0,
+      "fuel": "Diesel",
+      "actual_inr": 2785000.0,
+      "predicted_inr": 4849183.6,
+      "abs_error_inr": 2064183.6,
+      "ape_pct": 74.1
+    },
+    {
+      "row_id": "cardekho_v4:43",
+      "source": "cardekho_v4",
+      "make": "Mercedes-Benz",
+      "model": "SLK-Class",
+      "year": 2010,
+      "km_driven": 34105.0,
+      "fuel": "Petrol",
+      "actual_inr": 2400000.0,
+      "predicted_inr": 343930.3,
+      "abs_error_inr": 2056069.7,
+      "ape_pct": 85.7
+    },
+    {
+      "row_id": "city_listings:1070",
+      "source": "city_listings",
+      "make": "Land Rover",
+      "model": "Range Rover Evoque",
+      "year": 2017,
+      "km_driven": 80400.0,
+      "fuel": "Diesel",
+      "actual_inr": 3550000.0,
+      "predicted_inr": 5605124.2,
+      "abs_error_inr": 2055124.2,
+      "ape_pct": 57.9
+    },
+    {
+      "row_id": "city_listings:383",
+      "source": "city_listings",
+      "make": "Lexus",
+      "model": "ES",
+      "year": 2017,
+      "km_driven": 16000.0,
+      "fuel": "Petrol",
+      "actual_inr": 3790000.0,
+      "predicted_inr": 1784185.5,
+      "abs_error_inr": 2005814.5,
+      "ape_pct": 52.9
+    },
+    {
+      "row_id": "cardekho_v3:6217",
+      "source": "cardekho_v3",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "year": 2014,
+      "km_driven": 60000.0,
+      "fuel": "Diesel",
+      "actual_inr": 3500000.0,
+      "predicted_inr": 1516131.8,
+      "abs_error_inr": 1983868.2,
+      "ape_pct": 56.7
+    },
+    {
+      "row_id": "city_listings:959",
+      "source": "city_listings",
+      "make": "Porsche",
+      "model": "Cayenne",
+      "year": 2013,
+      "km_driven": 87000.0,
+      "fuel": "Diesel",
+      "actual_inr": 3900000.0,
+      "predicted_inr": 2070897.1,
+      "abs_error_inr": 1829102.9,
+      "ape_pct": 46.9
+    },
+    {
+      "row_id": "cardekho_v4:96",
+      "source": "cardekho_v4",
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2017,
+      "km_driven": 56000.0,
+      "fuel": "Petrol",
+      "actual_inr": 5100000.0,
+      "predicted_inr": 3381328.0,
+      "abs_error_inr": 1718672.0,
+      "ape_pct": 33.7
+    },
+    {
+      "row_id": "cardekho_v3:7930",
+      "source": "cardekho_v3",
+      "make": "Volvo",
+      "model": "S90",
+      "year": 2019,
+      "km_driven": 17000.0,
+      "fuel": "Diesel",
+      "actual_inr": 5500000.0,
+      "predicted_inr": 3826278.5,
+      "abs_error_inr": 1673721.5,
+      "ape_pct": 30.4
+    },
+    {
+      "row_id": "cardekho_v4:1540",
+      "source": "cardekho_v4",
+      "make": "SsangYong",
+      "model": "Rexton",
+      "year": 2013,
+      "km_driven": 72000.0,
+      "fuel": "Diesel",
+      "actual_inr": 975000.0,
+      "predicted_inr": 2593758.6,
+      "abs_error_inr": 1618758.6,
+      "ape_pct": 166.0
+    }
+  ],
+  "caveat": "Random group split does not demonstrate accuracy on future market conditions. Prices are 2019-2022-era listings."
+}

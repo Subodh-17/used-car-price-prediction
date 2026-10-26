@@ -1,0 +1,10 @@
+# Backend + ML runtime. Versions are minimums; the shipped artifact was trained with the versions in
+# ml/models/training_metadata.json (scikit-learn pickles are version specific -> retrain if you change them).
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+scipy>=1.11
+joblib>=1.3

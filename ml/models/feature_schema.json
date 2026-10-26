@@ -1,0 +1,128 @@
+{
+  "pipeline_input_columns": [
+    "make",
+    "model",
+    "variant",
+    "fuel",
+    "transmission",
+    "seller_type",
+    "city",
+    "body_type",
+    "year",
+    "snapshot_year",
+    "km_driven",
+    "owner_count",
+    "engine_cc",
+    "max_power_bhp",
+    "mileage",
+    "seats"
+  ],
+  "categorical": [
+    "make",
+    "model",
+    "variant",
+    "fuel",
+    "transmission",
+    "seller_type",
+    "city",
+    "body_type"
+  ],
+  "numeric_after_age_derivation": [
+    "vehicle_age",
+    "km_driven",
+    "owner_count",
+    "engine_cc",
+    "max_power_bhp",
+    "mileage",
+    "seats"
+  ],
+  "derived": {
+    "vehicle_age": "snapshot_year - year (snapshot_year = valuation_year at inference)"
+  },
+  "valuation_year": 2022,
+  "bounds": {
+    "year": [
+      1980,
+      2100
+    ],
+    "km_driven": [
+      0,
+      1000000
+    ],
+    "owner_count": [
+      1,
+      4
+    ],
+    "engine_cc": [
+      300,
+      9000
+    ],
+    "max_power_bhp": [
+      15,
+      1500
+    ],
+    "mileage": [
+      2,
+      60
+    ],
+    "seats": [
+      2,
+      14
+    ]
+  },
+  "allowed_values": {
+    "fuel": [
+      "CNG",
+      "Diesel",
+      "Electric",
+      "Hybrid",
+      "LPG",
+      "Other",
+      "Petrol"
+    ],
+    "transmission": [
+      "Automatic",
+      "Manual"
+    ],
+    "seller_type": [
+      "Commercial Registration",
+      "Corporate",
+      "Dealer",
+      "Individual",
+      "Trustmark Dealer"
+    ],
+    "body_type": [
+      "Hatchback",
+      "Sedan",
+      "SUV"
+    ]
+  },
+  "unknown_category_handling": "unseen categories are encoded as missing/'other' inside the fitted pipeline; the API additionally reports them as coverage warnings",
+  "excluded_as_leakage_or_unavailable": {
+    "third_listings": [
+      "broker_quote",
+      "original_price",
+      "emi_starts_from",
+      "booking_down_pymnt",
+      "car_rating",
+      "times_viewed",
+      "assured_buy",
+      "is_hot",
+      "fitness_certificate",
+      "warranty_avail",
+      "car_availability",
+      "source"
+    ],
+    "city_listings_Dataset.csv": [
+      "inv_car_price",
+      "inv_car_dist",
+      "std_invprice",
+      "best_buy1",
+      "best_buy2"
+    ],
+    "car data.csv": [
+      "Present_Price"
+    ]
+  },
+  "uses_variant": true
+}

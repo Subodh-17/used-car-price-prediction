@@ -1,0 +1,13 @@
+{
+  "n_test": 2045,
+  "recomputed": {
+    "n": 2045,
+    "mae_inr": 129033.6031398183,
+    "rmse_inr": 633966.8775133813,
+    "r2": 0.6919824853227973,
+    "mape_pct": 15.861939153717863,
+    "median_ape_pct": 11.168256239664515
+  },
+  "recomputed_interval_coverage": 0.8083129584352078,
+  "matches_saved_metrics": true
+}

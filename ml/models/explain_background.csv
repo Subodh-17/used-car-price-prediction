@@ -1,0 +1,151 @@
+make,model,variant,fuel,transmission,seller_type,city,body_type,year,snapshot_year,km_driven,owner_count,engine_cc,max_power_bhp,mileage,seats
+Mahindra,xuv500,at w10 fwd,Diesel,Automatic,Individual,,,2015.0,2020.0,70000.0,1.0,2179.0,140.0,16.0,7.0
+Skoda,octavia,1.8 tsi style plus at 2017,Petrol,Automatic,Individual,Mumbai,,2017.0,2022.0,28000.0,1.0,1798.0,177.0,,5.0
+Tata,indica,vista aqua 1.4 tdi,Diesel,Manual,Individual,,,2011.0,2020.0,80000.0,1.0,1405.0,71.0,17.0,5.0
+Maruti Suzuki,wagon r,vxi,Petrol,Manual,Individual,,,2005.0,2020.0,50000.0,3.0,998.0,67.1,18.9,5.0
+Mercedes-Benz,e class,e350 cdi avantgarde,Diesel,Automatic,Individual,Pune,,2010.0,2022.0,120000.0,1.0,2987.0,231.0,,5.0
+Ford,figo,duratorq diesel zxi 1.4,Diesel,,,Thane,,2014.0,2021.0,68051.0,,,,,
+Maruti Suzuki,ritz,vdi,Diesel,Manual,Individual,,,2013.0,2020.0,142000.0,2.0,1248.0,73.94,23.2,5.0
+Toyota,innova,2.5 v diesel 8 seater,Diesel,Manual,Individual,,,2008.0,2020.0,260000.0,1.0,2494.0,102.0,12.8,8.0
+Mahindra,xuv300,1.5 w6,Diesel,Manual,Individual,Agra,,2020.0,2022.0,57400.0,1.0,1497.0,115.0,,5.0
+Renault,kwid,rxt,Petrol,Manual,Dealer,,,2016.0,2020.0,66693.0,1.0,799.0,53.3,25.17,5.0
+Tata,indica,gls bs iv,Petrol,Manual,Individual,,,2010.0,2020.0,70000.0,1.0,,,,
+Honda,city,i vtec v,Petrol,Manual,Individual,,,2015.0,2020.0,10000.0,1.0,,,,
+Ford,figo,aspire 1.2 ti vct sports edition,Petrol,Manual,Individual,,,2017.0,2020.0,25000.0,1.0,1196.0,86.8,18.12,5.0
+Ford,ecosport,1.5 dv5 mt titanium,Diesel,Manual,Individual,,,2015.0,2020.0,135000.0,2.0,,,,
+Mahindra,xuv500,w8 awd,Diesel,Manual,Individual,,,2014.0,2020.0,50000.0,1.0,2179.0,140.0,15.1,7.0
+Mercedes-Benz,c class,250 cdi,Diesel,,,Chennai,,2011.0,2021.0,97000.0,,,,,
+Maruti Suzuki,baleno,zeta 1.3,Diesel,Manual,Individual,,,2016.0,2020.0,72000.0,1.0,,,,
+Toyota,etios,vx,Petrol,Manual,Individual,,,2011.0,2020.0,70000.0,1.0,1496.0,88.7,17.6,5.0
+Jeep,compass,2.0 limited option,Diesel,Manual,Individual,,,2017.0,2020.0,12000.0,1.0,1956.0,170.0,17.1,5.0
+Toyota,innova,zx 2.4 at 7 str,Diesel,Automatic,Individual,Mumbai,,2021.0,2022.0,38000.0,1.0,2393.0,148.0,,7.0
+Toyota,innova,2.5 ev diesel ps 7 seater bs iv,Diesel,Manual,Individual,,,2013.0,2020.0,70000.0,1.0,2494.0,100.57,12.99,7.0
+Maruti Suzuki,ciaz,zdi plus shvs,Diesel,Manual,Individual,,,2016.0,2020.0,70000.0,2.0,1248.0,88.5,28.09,5.0
+Honda,amaze,vx i vtec,Petrol,Manual,Dealer,,,2018.0,2020.0,13500.0,1.0,,,,
+Maruti Suzuki,swift,vxi,Petrol,Manual,Individual,Ahmedabad,,2021.0,2022.0,14366.0,1.0,1197.0,89.0,,5.0
+Honda,brio,s mt,Petrol,Manual,Individual,,,2013.0,2020.0,80000.0,2.0,1198.0,86.8,19.4,5.0
+Honda,accord,v6 at,Petrol,Automatic,Individual,,,2004.0,2020.0,100000.0,2.0,2997.0,218.0,9.0,5.0
+Hyundai,grand i10,asta option,Petrol,Manual,Dealer,,,2015.0,2020.0,31080.0,1.0,,,,
+Skoda,superb,1.8 tsi,Petrol,Automatic,Individual,,,2010.0,2020.0,60000.0,2.0,,,,
+Audi,a6,35 tfsi matrix,Petrol,Automatic,Dealer,,,2019.0,2020.0,23600.0,,1798.0,187.74,15.26,5.0
+MG,astor,sharp ex 1.5 mt,Petrol,Manual,Individual,Kolkata,,2022.0,2022.0,600.0,1.0,1498.0,108.0,,5.0
+Tata,indica,vista aqua 1.3 quadrajet abs,Diesel,Manual,Individual,,,2013.0,2020.0,120000.0,2.0,,,,
+Toyota,innova,2.5 v diesel 7 seater,Diesel,Manual,Individual,,,2011.0,2020.0,300000.0,3.0,2494.0,102.0,12.8,7.0
+Toyota,innova,2.5 vx diesel 7 seater,Diesel,Manual,Individual,,,2014.0,2020.0,217000.0,2.0,2494.0,100.6,12.99,7.0
+Nissan,micra,xv cvt,Petrol,Automatic,Individual,,,2015.0,2020.0,50000.0,1.0,1198.0,76.0,19.34,5.0
+Hyundai,i20,1.2 spotz,Petrol,Manual,Individual,,,2017.0,2020.0,20000.0,1.0,1197.0,81.83,18.6,5.0
+Maruti Suzuki,alto 800,lxi,Petrol,Manual,Individual,,,2013.0,2020.0,87000.0,1.0,,,,
+Maruti Suzuki,celerio,vxi,Petrol,Manual,Individual,,,2015.0,2020.0,45000.0,1.0,,,,
+Mahindra,kuv,100 d75 k8,Diesel,Manual,Individual,,,2020.0,2020.0,60000.0,1.0,1198.0,77.0,25.32,6.0
+Toyota,innova,2.8 zx at 7 str,Diesel,Automatic,Individual,Ludhiana,,2018.0,2022.0,40000.0,1.0,2755.0,172.0,,7.0
+Maruti Suzuki,swift,ldi,Diesel,Manual,Individual,,,2012.0,2020.0,70000.0,1.0,,,,
+Maruti Suzuki,800,std,Petrol,Manual,Individual,,,2003.0,2020.0,54000.0,1.0,,,,
+Mahindra,bolero,power plus slx,Diesel,Manual,Individual,,,2018.0,2020.0,50000.0,1.0,1493.0,70.0,16.5,7.0
+Hyundai,verna,fluidic 1.6 crdi sx opt at,Diesel,Automatic,,Hyderabad,,2014.0,2021.0,72230.0,,,,,
+Maruti Suzuki,swift,vdi bsiv,Diesel,Manual,Individual,,,2014.0,2020.0,80000.0,1.0,,,,
+Honda,wr v,vx mt petrol,Petrol,Manual,Individual,Mumbai,,2018.0,2022.0,45326.0,1.0,1199.0,89.0,,5.0
+Tata,zest,revotron 1.2 xt,Petrol,Manual,Individual,,,2015.0,2020.0,40000.0,1.0,1193.0,88.7,17.57,5.0
+Toyota,innova,crysta 2.7 zx at 7 str,Petrol,Automatic,,Delhi,,2019.0,2021.0,15800.0,,,,,
+Mahindra,scorpio,vlx 2wd bsiii,Diesel,Manual,Individual,,,2012.0,2020.0,70000.0,1.0,2179.0,120.0,12.05,8.0
+Honda,amaze,1.2 vx i vtec,Petrol,,,Pune,,2020.0,2021.0,8000.0,,,,,
+Honda,mobilio,s i dtec,Diesel,Manual,Individual,,,2015.0,2020.0,120000.0,1.0,1498.0,98.6,24.2,7.0
+Tata,hexa,xta 4x2 7 str,Diesel,Automatic,Individual,Hyderabad,,2017.0,2022.0,95785.0,1.0,2179.0,154.0,,7.0
+Chevrolet,enjoy,1.3 tcdi ls 8,Diesel,Manual,Individual,,,2016.0,2020.0,80000.0,1.0,1248.0,73.74,18.2,8.0
+Renault,kwid,rxt optional,Petrol,Manual,Individual,,,2016.0,2020.0,25000.0,1.0,799.0,53.3,25.17,5.0
+Hyundai,i20,magna 1.2,Petrol,Manual,Individual,Kanpur,,2013.0,2022.0,79287.0,1.0,1197.0,83.0,,5.0
+Chevrolet,spark,1.0,Petrol,Manual,Individual,,,2010.0,2020.0,70000.0,2.0,995.0,62.0,18.0,5.0
+Hyundai,i10,sportz 1.2 kappa2,Petrol,Manual,Individual,Lucknow,,2011.0,2022.0,64000.0,1.0,1197.0,79.0,,5.0
+Hyundai,i10,sportz 1.2 kappa2,Petrol,,,Mumbai,,2013.0,2021.0,29708.0,,,,,
+Hyundai,creta,1.4 crdi s,Diesel,Manual,Dealer,,,2016.0,2020.0,39000.0,1.0,1396.0,88.7,21.38,5.0
+Honda,brio,v mt,Petrol,Manual,,Noida,,2012.0,2021.0,85000.0,,,,,
+Mahindra,quanto,c6,Diesel,Manual,Individual,,,2013.0,2020.0,120000.0,2.0,,,,
+Volkswagen,vento,petrol highline at,Petrol,Automatic,Individual,,,2011.0,2020.0,70000.0,3.0,,,,
+Hyundai,creta,1.6 sx option,Petrol,Manual,Individual,,,2018.0,2020.0,15000.0,1.0,,,,
+Maruti Suzuki,omni,mpi std bsiv,Petrol,Manual,Individual,,,2016.0,2020.0,120000.0,1.0,,,,
+Maruti Suzuki,800,std bsii,Petrol,Manual,Individual,,,2004.0,2020.0,60000.0,2.0,,,,
+Mahindra,bolero,power plus slx,Diesel,Manual,Individual,,,2018.0,2020.0,25000.0,1.0,,,,
+Ford,endeavour,3.0l 4x4 at,Diesel,Automatic,Individual,,,2011.0,2020.0,93468.0,2.0,2953.0,153.86,11.4,7.0
+Maruti Suzuki,ciaz,1.3 zeta,Diesel,Manual,Individual,,,2018.0,2020.0,20000.0,1.0,1248.0,88.5,28.09,5.0
+Honda,civic,1.8 v at,Petrol,Automatic,Individual,,,2009.0,2020.0,40000.0,3.0,1799.0,130.0,12.9,5.0
+Skoda,rapid,1.5 tdi at ambition,Diesel,Automatic,Dealer,,,2015.0,2020.0,46957.0,1.0,,,,
+Hyundai,i10,era,Petrol,Manual,Individual,,,2010.0,2020.0,49200.0,2.0,1086.0,68.05,19.81,5.0
+Mercedes-Benz,c coupe,43 amg 4matic,Petrol,Automatic,Individual,Chennai,,2020.0,2022.0,19000.0,1.0,2996.0,385.0,,4.0
+Toyota,etios,cross 1.2 g,Petrol,,,Thane,,2015.0,2021.0,39792.0,,,,,
+Ford,aspire,titanium bsiv,Petrol,Manual,Dealer,,,2017.0,2020.0,101159.0,1.0,,,,
+Maruti Suzuki,swift,vdi bsiii,Diesel,Manual,Individual,,,2010.0,2020.0,110000.0,3.0,1248.0,75.0,17.8,5.0
+Hyundai,i20,active 1.4 sx,Diesel,Manual,Individual,Agra,,2015.0,2022.0,59000.0,1.0,1396.0,89.0,,5.0
+Hyundai,eon,era plus,Petrol,Manual,Dealer,,,2018.0,2020.0,20629.0,1.0,,,,
+Tata,indica,v2 elx,Diesel,Manual,Individual,,,2014.0,2020.0,120000.0,1.0,1396.0,69.0,25.0,5.0
+Hyundai,creta,1.6 crdi sx option,Diesel,Manual,Dealer,,,2018.0,2020.0,20694.0,1.0,,,,
+Maruti Suzuki,swift dzire,zdi,Diesel,Manual,Individual,,,2011.0,2020.0,110000.0,2.0,1248.0,73.9,19.3,5.0
+Volkswagen,vento,diesel comfortline,Diesel,Manual,Individual,,,2011.0,2020.0,120000.0,3.0,1598.0,103.6,20.54,5.0
+Mahindra,xuv500,w6 2wd,Diesel,Manual,Individual,,,2014.0,2020.0,122000.0,2.0,2179.0,140.0,15.1,7.0
+Honda,amaze,s cvt diesel bsiv,Diesel,Automatic,Individual,,,2019.0,2020.0,40000.0,1.0,1498.0,78.9,23.8,5.0
+Chevrolet,spark,1.0 ls,Petrol,Manual,Individual,,,2009.0,2020.0,90000.0,1.0,,,,
+Hyundai,santro xing,xl erlx euro iii,Petrol,Manual,Individual,,,2005.0,2020.0,47000.0,1.0,,,,
+Maruti Suzuki,baleno,alpha 1.2 at,Petrol,Automatic,Individual,Mumbai,,2017.0,2022.0,35000.0,3.0,1197.0,83.0,,5.0
+Maruti Suzuki,celerio,vxi amt,Petrol,Automatic,Individual,Delhi,,2014.0,2022.0,35000.0,1.0,998.0,67.0,,5.0
+Mahindra,bolero,pik up cbc 1.7t,Diesel,Manual,Individual,,,2019.0,2020.0,80000.0,1.0,2523.0,70.0,,2.0
+Hyundai,i20,sportz option 1.2,Petrol,Manual,Individual,,,2015.0,2020.0,60000.0,1.0,1197.0,81.83,18.6,5.0
+Mahindra,tuv,300 t8,Diesel,Manual,Individual,,,2016.0,2020.0,100000.0,1.0,1493.0,100.0,18.49,7.0
+Maruti Suzuki,ritz,vxi bs iv,Petrol,Manual,Individual,Mumbai,,2011.0,2022.0,28000.0,1.0,,,,
+Maruti Suzuki,swift dzire,vdi,Diesel,Manual,Individual,,,2017.0,2020.0,20000.0,1.0,1248.0,74.02,28.4,5.0
+Maruti Suzuki,alto 800,lxi,Petrol,Manual,Individual,,,2017.0,2020.0,58000.0,1.0,796.0,47.3,24.7,5.0
+Honda,city,1.5 e mt,Petrol,Manual,Individual,,,2011.0,2020.0,50000.0,1.0,1497.0,118.0,17.0,5.0
+Audi,q5,3.0 tdi quattro,Diesel,Automatic,Individual,Delhi,,2009.0,2022.0,63300.0,1.0,2967.0,240.0,,5.0
+Hyundai,eon,era plus,Petrol,Manual,Individual,,,2012.0,2020.0,50000.0,2.0,814.0,55.2,21.1,5.0
+Maruti Suzuki,swift,vdi bsiv,Diesel,Manual,Individual,,,2009.0,2020.0,120000.0,1.0,,,,
+Nissan,micra,xl,Petrol,Manual,Individual,,,2013.0,2020.0,28740.0,1.0,,,,
+Nissan,micra,diesel xv premium,Diesel,Manual,Individual,,,2011.0,2020.0,120000.0,1.0,,,,
+Maruti Suzuki,omni,mpi cargo bsiv,Petrol,Manual,Individual,,,2017.0,2020.0,50000.0,1.0,796.0,34.2,16.8,5.0
+Ford,figo,diesel exi option,Diesel,Manual,Dealer,,,2010.0,2020.0,85568.0,1.0,1399.0,68.0,18.5,5.0
+Hyundai,i20,sportz 1.4 crdi,Diesel,Manual,Individual,,,2012.0,2020.0,80000.0,2.0,1396.0,88.76,21.9,5.0
+Maruti Suzuki,alto,lxi,Petrol,Manual,Individual,,,2012.0,2020.0,60000.0,2.0,,,,
+Honda,mobilio,s diesel,Diesel,Manual,Individual,Agra,,2015.0,2022.0,72000.0,2.0,1498.0,99.0,,7.0
+Hyundai,santro,sportz,Petrol,Manual,Individual,Ahmedabad,,2021.0,2022.0,19000.0,1.0,1086.0,68.0,,5.0
+Mahindra,kuv,100 mfalcon g80 k8 5str,Petrol,Manual,Individual,,,2016.0,2020.0,40000.0,1.0,1198.0,82.0,18.15,5.0
+Hyundai,elite i20,magna executive 1.2,Petrol,,,Chennai,,2018.0,2021.0,18000.0,,,,,
+Toyota,fortuner,2.8 2wd at bsiv,Diesel,Automatic,Individual,,,2017.0,2020.0,20000.0,1.0,,,,
+Hyundai,verna,sx crdi at,Diesel,Automatic,Individual,,,2012.0,2020.0,90000.0,1.0,1582.0,126.32,19.08,5.0
+Jeep,compass,2.0 limited,Diesel,Manual,Individual,,,2018.0,2020.0,24000.0,1.0,1956.0,170.0,17.1,5.0
+Volkswagen,polo,gt tdi,Diesel,,,Delhi,,2014.0,2021.0,85000.0,,,,,
+Toyota,innova,crysta 2.8 zx at 7 str,Diesel,Automatic,,Delhi,,2018.0,2021.0,80000.0,,,,,
+Hyundai,i20,1.4 sportz,Diesel,Manual,Individual,,,2017.0,2020.0,60000.0,1.0,,,,
+Maruti Suzuki,sx4,vdi,Diesel,Manual,Individual,,,2012.0,2020.0,25000.0,2.0,1248.0,88.8,21.5,5.0
+Land Rover,discovery,sport hse luxury 7 seater,Diesel,Automatic,Individual,Chennai,,2020.0,2022.0,32368.0,1.0,2179.0,188.0,,7.0
+Hyundai,i20,asta,Petrol,Manual,Individual,,,2009.0,2020.0,89322.0,2.0,1197.0,80.0,17.0,5.0
+Toyota,corolla,altis vl at petrol,Petrol,Automatic,Individual,Ahmedabad,,2019.0,2022.0,39000.0,2.0,1798.0,138.0,,5.0
+Honda,city,1.5 v at,Petrol,Automatic,Individual,,,2010.0,2020.0,60000.0,2.0,1497.0,118.0,16.8,5.0
+Volkswagen,vento,1.5 tdi highline plus at,Diesel,Automatic,Dealer,,,2015.0,2020.0,69000.0,1.0,1498.0,108.6,22.15,5.0
+Maruti Suzuki,alto k10,vxi airbag,Petrol,Manual,Individual,,,2017.0,2020.0,45000.0,1.0,998.0,67.1,23.95,5.0
+Toyota,innova,2.5 vx diesel 8 seater,Diesel,Manual,Individual,,,2014.0,2020.0,70000.0,1.0,,,,
+Ford,figo,duratorq diesel titanium 1.4,Diesel,,,Pune,,2011.0,2021.0,70738.0,,,,,
+Mahindra,bolero,slx 2wd bsiii,Diesel,Manual,Individual,,,2011.0,2020.0,200000.0,2.0,2523.0,63.0,13.6,7.0
+Maruti Suzuki,800,std,Petrol,Manual,Individual,,,1998.0,2020.0,80000.0,4.0,,,,
+Maruti Suzuki,vitara,brezza vdi amt,Diesel,Automatic,Individual,,,2019.0,2020.0,35000.0,1.0,1248.0,88.5,24.3,5.0
+Honda,amaze,vx i dtec,Diesel,Manual,Individual,,,2018.0,2020.0,40000.0,1.0,1498.0,98.6,25.8,5.0
+Maruti Suzuki,alto,lxi,Petrol,Manual,Individual,,,2010.0,2020.0,58000.0,1.0,796.0,46.3,19.7,5.0
+Nissan,terrano,xl,Petrol,Manual,Individual,,,2015.0,2020.0,40000.0,1.0,1598.0,102.5,13.24,5.0
+Tata,indigo,cs lx tdi bs iii,Diesel,Manual,Individual,,,2009.0,2020.0,30000.0,1.0,1396.0,69.0,19.09,5.0
+Maruti Suzuki,esteem,vxi bsiii,Petrol,Manual,Individual,,,2005.0,2020.0,80000.0,3.0,1298.0,85.0,15.9,5.0
+Hyundai,grand i10,1.2 kappa sportz option,Petrol,Manual,Individual,,,2017.0,2020.0,60000.0,1.0,1197.0,81.86,18.9,5.0
+Toyota,innova,2.5 e diesel ps 7 seater,Diesel,Manual,Individual,,,2010.0,2020.0,160000.0,1.0,2494.0,102.0,12.8,7.0
+Hyundai,verna,crdi abs,Diesel,Manual,Individual,,,2007.0,2020.0,80000.0,2.0,,,,
+Mercedes-Benz,e class,e 220d expression,Diesel,,,Pune,,2018.0,2021.0,55000.0,,,,,
+Maruti Suzuki,swift,vdi bsiv,Diesel,Manual,Individual,,,2017.0,2020.0,80362.0,1.0,,,,
+Tata,tigor,1.2 revotron xza,Petrol,Automatic,Dealer,,,2017.0,2020.0,19723.0,1.0,1199.0,84.0,20.3,5.0
+Tata,indigo,cs elx bs iv,Diesel,Manual,Individual,,,2013.0,2020.0,50300.0,1.0,,,,
+Audi,a4,35 tdi premium plus,Diesel,Automatic,Dealer,,,2015.0,2020.0,37000.0,1.0,1968.0,187.74,18.25,5.0
+Hyundai,eon,1.0 era plus,Petrol,Manual,Individual,,,2017.0,2020.0,60000.0,1.0,998.0,68.05,20.3,5.0
+Hyundai,creta,sx o 1.5 diesel automatic,Diesel,Automatic,,Mumbai,,2021.0,2021.0,7500.0,,,,,
+Hyundai,grand i10,1.2 kappa sportz bsiv,Petrol,Manual,Individual,,,2018.0,2020.0,32000.0,1.0,1197.0,81.86,18.9,5.0
+Toyota,innova,2.5 v diesel 7 seater,Diesel,Manual,Individual,,,2010.0,2020.0,334000.0,1.0,2494.0,102.0,12.8,7.0
+Renault,duster,85ps diesel rxl,Diesel,Manual,Dealer,,,2014.0,2020.0,40000.0,1.0,1461.0,83.8,20.45,5.0
+Hyundai,venue,sx 1.4 crdi,Diesel,Manual,Individual,Nashik,,2021.0,2022.0,37556.0,1.0,1396.0,89.0,,5.0
+Maruti Suzuki,800,ex bsii,Petrol,Manual,Individual,,,2003.0,2020.0,36088.0,1.0,796.0,37.0,16.1,4.0
+Maruti Suzuki,alto,std,Petrol,Manual,Individual,,,2008.0,2020.0,60000.0,1.0,796.0,46.3,19.7,5.0
+Mahindra,tuv,300 t4,Diesel,Manual,Individual,,,2017.0,2020.0,30000.0,2.0,1493.0,100.0,18.49,7.0
+Renault,kwid,rxt,Petrol,Manual,Individual,,,2016.0,2020.0,30000.0,1.0,799.0,53.3,25.17,5.0
+Tata,indigo,cs lx tdi bs iii,Diesel,Manual,Dealer,,,2015.0,2020.0,68745.0,1.0,,,,
+Mahindra,bolero,di,Diesel,Manual,Individual,,,2011.0,2020.0,110000.0,1.0,,,,
+Honda,amaze,vx i dtec,Diesel,Manual,Individual,,,2014.0,2020.0,141000.0,2.0,,,,

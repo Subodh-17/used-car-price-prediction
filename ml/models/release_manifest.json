@@ -1,0 +1,84 @@
+{
+  "release_timestamp_utc": "2026-10-26T13:17:41+00:00",
+  "release_version": "c190e4a8f72a23c9",
+  "valuation_reference_year": 2022,
+  "historical_market_reference": "2019-2022 historical Indian listing price levels (not current-market)",
+  "approved_sources": [
+    {
+      "file": "car data.csv",
+      "origin": "loose",
+      "sha256": "00b477def120548e583c638b00146982956b80646817901245ef78da9c4b3063",
+      "bytes": 17209,
+      "used_as": "cardekho_small_lakhs"
+    },
+    {
+      "file": "CAR DETAILS FROM CAR DEKHO.csv",
+      "origin": "loose",
+      "sha256": "454fe4ea4f6d2af973493287abf0631006a32bd4f462103e4dfcffa75d721edf",
+      "bytes": 354635,
+      "used_as": "cardekho_old"
+    },
+    {
+      "file": "Car details v3.csv",
+      "origin": "loose",
+      "sha256": "1b2a30b2f36fd246366773fe5375399692f1a113890ad2a6d464b8c8deaadadb",
+      "bytes": 1041637,
+      "used_as": "cardekho_v3"
+    },
+    {
+      "file": "car details v4.csv",
+      "origin": "loose",
+      "sha256": "6841a81165c2a390d84b361555489e123f739f0e4b2bfe7915e759746b3efe59",
+      "bytes": 352832,
+      "used_as": "cardekho_v4"
+    },
+    {
+      "file": "UsedCars_Combined.csv",
+      "origin": "loose",
+      "sha256": "e59c070d80bbe2745b99e84e52e006560667221e6942a283d1012dcaefb66816",
+      "bytes": 153074,
+      "used_as": "city_listings"
+    }
+  ],
+  "excluded_sources": [
+    "third_listings"
+  ],
+  "cleaned_dataset": {
+    "path": "used_cars_clean.csv",
+    "sha256": "e87050fd2972c61eb651af622ec4813729d67de933d25ea4404b21cc1557a4a6",
+    "rows_clean": 13630
+  },
+  "model_artifact": {
+    "path": "used_car_price_model.joblib",
+    "sha256": "31f503999c71430ac981189a8f5b0616b8058b13b48036dfabb6daf71e534b50",
+    "selected_estimator": "hist_gradient_boosting",
+    "hyperparameters": {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 50,
+      "min_samples_leaf": 10
+    }
+  },
+  "environment": {
+    "python": "3.11.0",
+    "scikit_learn": "1.9.1",
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "joblib": "1.6.0"
+  },
+  "sample_counts": {
+    "total_cleaned": 13630,
+    "development": 11585,
+    "held_out_test": 2045,
+    "cv_folds": 5
+  },
+  "split_strategy": "group-aware random holdout (no time-based split: reliable listing dates exist for one source only)",
+  "evaluation_held_out": {
+    "mae_inr": 129033.6031398183,
+    "rmse_inr": 633966.8775133813,
+    "r2": 0.6919824853227973,
+    "mape_pct": 15.861939153717863,
+    "median_ape_pct": 11.168256239664515,
+    "conformal_interval_coverage": 0.8083129584352078,
+    "conformal_interval_validated": true
+  }
+}

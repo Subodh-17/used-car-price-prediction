@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest>=8
+httpx>=0.27          # required by fastapi.testclient
+# Optional (evaluated automatically by ml/scripts/train.py when installed):
+# catboost>=1.2

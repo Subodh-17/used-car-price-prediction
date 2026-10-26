@@ -1,0 +1,115 @@
+{
+  "rows": 13630,
+  "checks": [
+    {
+      "check": "required columns present",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "row_id unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "price numeric & finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "price >= \u20b925,000",
+      "passed": true,
+      "detail": "min=29,999"
+    },
+    {
+      "check": "price scale looks like rupees (median between \u20b91L and \u20b920L)",
+      "passed": true,
+      "detail": "median=460,000"
+    },
+    {
+      "check": "year within bounds and not after snapshot",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "km_driven within bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "km per year plausible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fuel values valid",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "transmission values valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "body_type values valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "seller_type values valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "owner_count within bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "engine_cc within bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "max_power_bhp within bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "mileage within bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "seats within bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no cross-source duplicate listings",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "make/model present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every source price unit verified",
+      "passed": true,
+      "detail": "{'cardekho_v3': 'inr', 'cardekho_old': 'inr', 'cardekho_v4': 'inr', 'city_listings': 'inr', 'third_listings': 'inr', 'cardekho_small_lakhs': 'lakh'}"
+    },
+    {
+      "check": "no lakh-unit source used for training",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no group shared between development and test sets",
+      "passed": true,
+      "detail": "0 shared groups"
+    }
+  ]
+}
